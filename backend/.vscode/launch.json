@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-ServiceSolicitudApplication<service-solicitud>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.banqueteria.service_solicitud.ServiceSolicitudApplication",
+            "projectName": "service-solicitud",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
