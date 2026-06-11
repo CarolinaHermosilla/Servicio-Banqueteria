@@ -8,7 +8,7 @@ import { Solicitud } from './solicitud.model';
 })
 export class Cotizacion {
 
-  private apiUrl = 'http://localhost:4419/api/v1/solicitudes'
+  private apiUrl = 'https://servicio-banqueteria.onrender.com/api/v1/solicitudes'
 
   constructor(private http: HttpClient){}
 
