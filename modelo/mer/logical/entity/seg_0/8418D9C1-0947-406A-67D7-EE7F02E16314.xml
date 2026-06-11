@@ -1,0 +1,395 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8418D9C1-0947-406A-67D7-EE7F02E16314" name="minuta_calculada">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:22:58 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id" id="BC6E3D82-577D-AB01-0A71-1F2EB229B99C">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:23:19 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cliente" id="0C4C8E9F-7D54-1DE3-E882-067AA6E37232">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:24:36 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_evento" id="F06908C3-C325-4F6D-14D0-B1DB7F4CCBE0">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:25:33 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_invitados" id="7C08322B-9A31-3979-B536-CE0517414743">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:25:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_evento" id="878A550F-20A9-78BD-1FD6-009F3FCC8446">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:26:22 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="9EC59609-A92A-96C5-EC22-64CBAC174F05">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:26:40 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="variante_menu" id="A21B233B-E9B7-9580-A596-5B9BF26AC7F6">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:27:20 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="invitados_con_restriccion" id="80C35D21-6BB7-7EC7-A41A-63F7B9BFEA50">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:27:36 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_restriccion" id="0DC6FFC1-5E03-8756-F754-B7A2675740C1">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:39:09 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_coctel" id="2CA2AF15-A741-32F8-6781-3933632D6CBF">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:39:30 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_entrada" id="803A0AD6-6EB5-4317-04EF-96451BFBD592">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:39:52 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_fondo" id="6719E38A-E361-5CD8-AE82-C26FCE397B2A">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:39:54 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_proteina" id="15E08EB7-78CC-2258-DE63-E310C90DA5DF">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:39:54 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_postre" id="A80B2574-0BB7-B80C-2870-254704BAE804">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:40:22 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_bebestible" id="F01CA325-243B-3105-3A94-14676DF0E008">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:40:22 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_bebida_gaseosa" id="2F0C56FD-1E42-EBFE-D98B-A9C3EA04C540">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:41:59 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="sabor_jugo" id="F0AE9193-3D5C-82EC-6506-243D29C15048">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:42:00 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_alcohol" id="3AD551C3-0130-4416-EB66-BC36694E5D05">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:42:00 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_coctel_unidades" id="C8AABCD5-7506-699B-1DEB-853B479098D8">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:42:53 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_entradas_unidades" id="6ED52E82-A75D-E507-7CFE-4E7180C1B79C">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:43:51 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_fondos_porciones" id="5834C7D0-9D82-446F-0D34-F7D0D4A344AE">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:44:14 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_proteinas_gramos" id="D8FFA456-8049-BF0B-84E2-E91AA23474EE">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:44:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_postres_porciones" id="0FD7A107-5106-9363-6C5D-6B02ACB1E86D">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:44:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_mesas" id="C8C71C0A-E4F0-20F2-E459-11A94EC209B2">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:44:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_cubiertos" id="FAB0734A-D1EA-FC97-80EB-9127189FDBB1">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:45:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_porciones_gaseosas" id="C91A5AC2-6BF6-CEB6-1B11-0722219FFDA5">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:45:18 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_porciones_jugos" id="E8C8D5BA-61D4-E858-4559-89B65AFC37DB">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:45:51 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_porciones_alcohol" id="C36107FE-D586-AD8F-C7F3-0BD5C8C4AE20">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:45:51 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_garzones" id="E4FDDDEF-6CEE-417E-31DF-80F47CAE7CF2">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:46:19 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cantidad_chefs" id="E6486516-46CA-04BC-61BC-DD340049FDB0">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:46:34 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C16FB155-1781-7FFB-F8BE-5E1E51CC77A5" name="minuta_calculada PK">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:23:24 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BC6E3D82-577D-AB01-0A71-1F2EB229B99C</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

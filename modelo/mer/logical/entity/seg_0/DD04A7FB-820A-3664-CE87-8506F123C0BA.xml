@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DD04A7FB-820A-3664-CE87-8506F123C0BA" name="trabajador">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:49:28 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_trabajador" id="72849252-F730-3F6B-FA7A-8C171A579963">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:49:40 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario_entrada" id="E6AA192F-2B41-8C24-5C49-0330E3684DA8">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:49:51 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="horario_salida" id="CA9B7BE7-69D1-3A4B-004A-F62228D3A7DA">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:50:28 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT047</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="disponible" id="18F9946F-5DE7-4BAD-5803-65CF03C0468E">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:50:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_evento" id="34E3F36B-8254-CFF1-9734-526158E3A7A2">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:58:25 UTC</createdTime>
+<generatorID>E49933C8-2556-D0B7-F963-2616C089B191</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>BFD30283-3D63-E5A6-8C82-9AAB07942281</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="97F3D499-96E4-81DF-DF04-4CBFFC1D2120" name="trabajador PK">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:49:49 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>72849252-F730-3F6B-FA7A-8C171A579963</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

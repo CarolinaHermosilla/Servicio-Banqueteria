@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D700CAB8-778D-4D26-FFE7-213404A6BCC5" name="usuario">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:48:19 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_usuario" id="59B6E972-9FC2-59D4-0B94-A52B384FF9C6">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:48:27 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nombre_usuario" id="D817F41C-D719-D1F9-A243-6D7FC601AB4F">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:48:38 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="contrasena" id="4466CEAA-F05F-79F1-A4EB-9F2C89DF1C04">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:48:52 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="rol" id="8C29CC13-37CC-3329-2D41-D859A63FAC01">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:49:05 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FD637373-86BB-FED5-34EE-B195852211FE" name="usuario PK">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-10 23:48:36 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>59B6E972-9FC2-59D4-0B94-A52B384FF9C6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
