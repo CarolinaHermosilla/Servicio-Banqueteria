@@ -59,7 +59,7 @@ public class MinutaMotorService {
 
         // Tabla: calculos_gastronomicos
         CalculoGastronomico gastro = new CalculoGastronomico();
-        gastro.setTotalCoctelUnidades((int) Math.ceil(invitados * 5 * factorComida));
+        gastro.setTotalCoctelUnidades((int) Math.ceil(invitados * 2 * factorComida));
         gastro.setTotalEntradasUnidades((int) Math.ceil(invitados * 1 * factorComida));
         gastro.setTotalFondosPorciones(invitados);
         gastro.setTotalProteinaGramos((int) Math.ceil(invitados * 200 * factorComida));
