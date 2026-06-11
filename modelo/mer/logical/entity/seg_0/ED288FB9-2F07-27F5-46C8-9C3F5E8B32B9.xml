@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4411859-164F-F986-4D59-1D7069D77234" name="evento">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="ED288FB9-2F07-27F5-46C8-9C3F5E8B32B9" name="logistica_staff">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:54:22 UTC</createdTime>
+<createdTime>2026-06-11 20:22:05 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_evento" id="BFD30283-3D63-E5A6-8C82-9AAB07942281">
+<Attribute name="id_logistica_staff" id="4C017138-3D08-048A-DCEE-D425DA74FFF2">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:04 UTC</createdTime>
+<createdTime>2026-06-11 20:22:14 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -27,52 +27,49 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_inicio" id="6F71CE5E-B4D4-C6C7-3675-5C57535E0A71">
+<Attribute name="total_mesas" id="C037EAE2-5326-05C2-03B2-05646FC90655">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:43 UTC</createdTime>
+<createdTime>2026-06-11 20:22:25 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_termino" id="FBF8B723-05E1-BDF7-E976-65F11C1F4E74">
+<Attribute name="total_cubiertos" id="070BB66B-32F1-5A98-EE47-8EA9160B6F82">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:56:01 UTC</createdTime>
+<createdTime>2026-06-11 20:22:47 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="observaciones" id="70687172-6105-EDB6-D9D5-CD4748B43965">
+<Attribute name="cantidad_garzones" id="A8C2F247-0600-1458-F40B-25BC12CC279F">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:27:34 UTC</createdTime>
+<createdTime>2026-06-11 20:23:00 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_solicitud" id="458019E8-4593-759A-89B3-368B617317A2">
+<Attribute name="cantidad_chefs" id="496A3E02-369C-0416-C940-16038DA9FEEA">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:28:07 UTC</createdTime>
-<generatorID>03DACAF0-C1AD-6D19-C351-B42D5322F51E</generatorID>
+<createdTime>2026-06-11 20:23:14 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<referedAttribute>7357B643-C823-BC30-9DD5-0B9133440414</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -80,16 +77,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="734E3F9C-1444-5498-7D62-A4052E1CE756" name="evento PK">
+<identifier id="7DBBD0C5-C79F-6978-6D14-71256AF3FCB6" name="logistica_staff PK">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:17 UTC</createdTime>
+<createdTime>2026-06-11 20:22:23 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BFD30283-3D63-E5A6-8C82-9AAB07942281</attributeRef>
+<attributeRef>4C017138-3D08-048A-DCEE-D425DA74FFF2</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

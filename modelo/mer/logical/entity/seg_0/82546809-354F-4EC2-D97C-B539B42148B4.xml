@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4411859-164F-F986-4D59-1D7069D77234" name="evento">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="82546809-354F-4EC2-D97C-B539B42148B4" name="calculos_gastronomicos">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:54:22 UTC</createdTime>
+<createdTime>2026-06-11 20:19:05 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_evento" id="BFD30283-3D63-E5A6-8C82-9AAB07942281">
+<Attribute name="id_calculo" id="36AABB16-DD3E-AA53-3968-63771497C9B3">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:04 UTC</createdTime>
+<createdTime>2026-06-11 20:19:25 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -27,52 +27,61 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_inicio" id="6F71CE5E-B4D4-C6C7-3675-5C57535E0A71">
+<Attribute name="total_coctel_unidades" id="A7CBC357-7A08-4D9C-6381-41FF4CF5D0D6">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:43 UTC</createdTime>
+<createdTime>2026-06-11 20:19:33 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_termino" id="FBF8B723-05E1-BDF7-E976-65F11C1F4E74">
+<Attribute name="total_entradas_unidades" id="4DACD66F-841F-7C7F-6B4A-55F0E96CBFB8">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:56:01 UTC</createdTime>
+<createdTime>2026-06-11 20:20:22 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="observaciones" id="70687172-6105-EDB6-D9D5-CD4748B43965">
+<Attribute name="total_fondos_porciones" id="7C9EFFDA-C198-7053-F766-B27DAB639CCB">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:27:34 UTC</createdTime>
+<createdTime>2026-06-11 20:20:36 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
+<logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_solicitud" id="458019E8-4593-759A-89B3-368B617317A2">
+<Attribute name="total_proteinas_gramos" id="1B89100D-66F6-2472-C756-95ADA0AFFCC9">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:28:07 UTC</createdTime>
-<generatorID>03DACAF0-C1AD-6D19-C351-B42D5322F51E</generatorID>
+<createdTime>2026-06-11 20:20:47 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<referedAttribute>7357B643-C823-BC30-9DD5-0B9133440414</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_postres_porciones" id="D5B316CF-0608-E8C3-3EC2-682C518E7B51">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:20:59 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -80,16 +89,16 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="734E3F9C-1444-5498-7D62-A4052E1CE756" name="evento PK">
+<identifier id="03D32A62-0344-23DE-E3FD-DF4FEB0EFE50" name="calculos_gastronomicos PK">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:17 UTC</createdTime>
+<createdTime>2026-06-11 20:19:45 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BFD30283-3D63-E5A6-8C82-9AAB07942281</attributeRef>
+<attributeRef>36AABB16-DD3E-AA53-3968-63771497C9B3</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

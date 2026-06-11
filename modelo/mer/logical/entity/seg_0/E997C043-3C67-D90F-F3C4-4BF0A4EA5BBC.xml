@@ -1,7 +1,7 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="B4411859-164F-F986-4D59-1D7069D77234" name="evento">
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E997C043-3C67-D90F-F3C4-4BF0A4EA5BBC" name="selecciones_menu">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:54:22 UTC</createdTime>
+<createdTime>2026-06-11 20:12:42 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -15,9 +15,9 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="id_evento" id="BFD30283-3D63-E5A6-8C82-9AAB07942281">
+<Attribute name="id_seleccion" id="3FF913E7-1C9F-9016-BB46-BD819136CA62">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:04 UTC</createdTime>
+<createdTime>2026-06-11 20:13:04 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
@@ -27,69 +27,90 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="horario_inicio" id="6F71CE5E-B4D4-C6C7-3675-5C57535E0A71">
+<Attribute name="seleccion_coctel" id="F8A9CBBB-59F4-2E75-4441-737588CB6B24">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:43 UTC</createdTime>
+<createdTime>2026-06-11 20:13:27 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="horario_termino" id="FBF8B723-05E1-BDF7-E976-65F11C1F4E74">
-<createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:56:01 UTC</createdTime>
-<ownerDesignName>mer</ownerDesignName>
-<engineerTo>
-<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
-</engineerTo>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT047</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-</Attribute>
-<Attribute name="observaciones" id="70687172-6105-EDB6-D9D5-CD4748B43965">
-<createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:27:34 UTC</createdTime>
-<ownerDesignName>mer</ownerDesignName>
-<engineerTo>
-<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
-</engineerTo>
-<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="id_solicitud" id="458019E8-4593-759A-89B3-368B617317A2">
+<Attribute name="seleccion_entrada" id="8F1AA788-C0FD-BA52-C85B-F047357ADF0D">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-11 20:28:07 UTC</createdTime>
-<generatorID>03DACAF0-C1AD-6D19-C351-B42D5322F51E</generatorID>
+<createdTime>2026-06-11 20:13:53 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
-<referedAttribute>7357B643-C823-BC30-9DD5-0B9133440414</referedAttribute>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_fondo" id="208F744A-7F55-B29A-A2ED-DC714BBC66D3">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:14:04 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_proteina" id="4B437939-1314-6CC3-A6D2-8B735130E60E">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:14:12 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_postre" id="FF3B3142-BE56-B138-11D8-DF663016219C">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:14:26 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="seleccion_bebestibles" id="BE3950E6-2BF9-046B-B981-F204C10F3E7E">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:14:37 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="734E3F9C-1444-5498-7D62-A4052E1CE756" name="evento PK">
+<identifier id="CDC9E69F-3DF8-6D4A-49B4-854203ABE6E2" name="selecciones_menu PK">
 <createdBy>pedro</createdBy>
-<createdTime>2026-06-10 23:55:17 UTC</createdTime>
+<createdTime>2026-06-11 20:13:21 UTC</createdTime>
 <ownerDesignName>mer</ownerDesignName>
 <engineerTo>
 <item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>
-<attributeRef>BFD30283-3D63-E5A6-8C82-9AAB07942281</attributeRef>
+<attributeRef>3FF913E7-1C9F-9016-BB46-BD819136CA62</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="32C6D14D-ADE1-F526-BD84-40E3D36BAF59" name="solicitudes">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:09:18 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_solicitud" id="7357B643-C823-BC30-9DD5-0B9133440414">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:09:33 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cliente" id="8E734F09-A991-6F07-1535-5C8C33279CE2">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:10:10 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tipo_evento" id="B7F0E530-8629-CB87-1225-AC32CF662FB6">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:10:38 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="total_invitados" id="D655AC77-75EC-9A12-7BBA-DB687424D3E6">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:10:51 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="fecha_evento" id="79864B4D-C981-82C6-AEE6-918A195CE3F9">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:11:15 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="estado" id="BCD0140A-7447-CA60-E4AD-D37C9A982395">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:11:54 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="variante_menu" id="A46341FD-4A7B-EE19-39A3-5C5890DAE395">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:12:09 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25</dataTypeSize>
+<ownDataTypeParameters>25,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_excepciones" id="5EEC5D22-912E-6524-1557-B0D50350F5F3">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:18:19 UTC</createdTime>
+<generatorID>67210ACE-B06A-E13C-57C7-A5EFEF0FDD83</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>1EEA5448-937B-979B-0B1F-4D1548E1432F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_calculo" id="01CC4521-DAE4-49A1-522C-1E5E2E643E1C">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:21:19 UTC</createdTime>
+<generatorID>97254DEE-6DA3-9E55-B1F8-658A178226BB</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>36AABB16-DD3E-AA53-3968-63771497C9B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_logistica_staff" id="DB6CFEA4-6BED-DB08-F633-5F1DAD64D5CE">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:23:35 UTC</createdTime>
+<generatorID>F52D2426-DDB0-270B-9F11-83E702526BC6</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>4C017138-3D08-048A-DCEE-D425DA74FFF2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_calc_bebestible" id="F04502A7-A151-2637-D281-4484BDB2A6DF">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:26:27 UTC</createdTime>
+<generatorID>E8B80CF6-A0D3-46E1-8F7F-429B0731B1E6</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>7DB7133F-DD77-1529-073A-55229325610F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_seleccion" id="91A77C18-AFDE-E1F3-7082-83F7BF653BC4">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:26:42 UTC</createdTime>
+<generatorID>C4A844BC-089A-0E1E-BCAA-A82094B40DCE</generatorID>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<referedAttribute>3FF913E7-1C9F-9016-BB46-BD819136CA62</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C6AD7114-1792-61A9-A00F-EB3AD970BBD2" name="solicitudes PK">
+<createdBy>pedro</createdBy>
+<createdTime>2026-06-11 20:09:55 UTC</createdTime>
+<ownerDesignName>mer</ownerDesignName>
+<engineerTo>
+<item key="9E194AFD-919A-C05A-90E8-B33B39BD97C9" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7357B643-C823-BC30-9DD5-0B9133440414</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
