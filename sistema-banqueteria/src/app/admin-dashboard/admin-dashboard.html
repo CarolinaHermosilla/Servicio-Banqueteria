@@ -1,0 +1,124 @@
+<div class="admin-container">
+  <h2>Dashboard de Administración - Banquetería Espacio Gastronómico</h2>
+
+  <div class="table-responsive">
+    <table class="admin-table">
+      <thead>
+        <tr>
+          <th>ID Cotización</th>
+          <th>Cliente</th>
+          <th>Fecha Evento</th>
+          <th>Invitados</th>
+          <th>Estado</th>
+          <th>Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="!solicitudes || solicitudes.length === 0">
+          <td colspan="6" style="text-align: center; color: gray; padding: 20px;">
+            No hay solicitudes en la base de datos o el arreglo llegó vacío.
+          </td>
+        </tr>
+
+        <tr *ngFor="let s of solicitudes">
+          <td><strong>#{{ s.idCotizacion }}</strong></td>
+          <td>{{ s.cliente }}</td>
+          <td>{{ s.fechaEvento }}</td>
+          <td>{{ s.totalInvitados }} personas</td>
+          <td>
+            <span class="badge" [ngClass]="{
+              'badge-pendiente': s.estado === 'PENDIENTE' || s.estado === 'Pendiente',
+              'badge-espera': s.estado === 'EN_ESPERA',
+              'badge-confirmado': s.estado === 'CONFIRMADO'
+            }">{{ s.estado }}</span>
+          </td>
+          <td>
+            <button class="btn-ver" (click)="verDetalle(s)">Ver Desglose Culinario</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="detalle-panel" *ngIf="solicitudSeleccionada">
+    <div class="detalle-header">
+      <h3>Detalle de Producción - Cotización #{{ solicitudSeleccionada.idCotizacion }}</h3>
+      <div class="header-botones">
+        <button class="btn-primary" style="margin-right: 10px;" (click)="imprimirDetalle()">🖨️ Guardar PDF</button>
+        <button class="btn-cerrar" (click)="cerrarDetalle()">❌ Cerrar</button>
+      </div>
+    </div>
+
+    <div class="detalle-body">
+      <div class="info-general-admin">
+        <p><strong>Cliente Banquetera:</strong> {{ solicitudSeleccionada.cliente }}</p>
+        <p><strong>Tipo de Evento:</strong> {{ solicitudSeleccionada.tipoEvento }} | <strong>Variante de Menú:</strong> {{ solicitudSeleccionada.varianteMenu }}</p>
+        <p><strong>Excepciones Alimentarias:</strong> {{ solicitudSeleccionada.invitadosConRestriccion }} invitados ({{ solicitudSeleccionada.tipoRestriccion || 'Ninguna' }})</p>
+      </div>
+      
+      <hr>
+
+      <div class="desglose-grid">
+        <div class="desglose-col">
+          <h4>🍽️ Preferencias Elegidas por el Cliente:</h4>
+          <ul>
+            <li><strong>Cóctel:</strong> {{ solicitudSeleccionada.seleccionCoctel || 'No especificado' }}</li>
+            <li><strong>Entrada:</strong> {{ solicitudSeleccionada.seleccionEntrada || 'No especificado' }}</li>
+            <li><strong>Fondo:</strong> {{ solicitudSeleccionada.seleccionFondo || 'No especificado' }}</li>
+            <li><strong>Proteína:</strong> {{ solicitudSeleccionada.seleccionProteina || 'No especificado' }}</li>
+            <li><strong>Postre:</strong> {{ solicitudSeleccionada.seleccionPostre || 'No especificado' }}</li>
+            <li><strong>Bebestibles Planificados:</strong> {{ solicitudSeleccionada.seleccionBebestibles || 'No especificado' }}</li>
+          </ul>
+        </div>
+
+        <div class="desglose-col">
+          <h4>🧮 Cantidades Calculadas para Producción:</h4>
+          <ul>
+            <li class="invitados-print-highlight" style="font-size: 1.1em; border-bottom: 2px dashed #ccc; padding-bottom: 5px; margin-bottom: 8px;">
+              <strong>👥 Total Invitados Base:</strong> <span class="text-highlight" style="font-size: 1.1em; color: #2ecc71;">{{ solicitudSeleccionada.totalInvitados }} asistentes</span>
+            </li>
+
+            <li><strong>Total Cóctel:</strong> <span class="text-highlight">{{ solicitudSeleccionada.totalCoctelUnidades }} unidades</span></li>
+            <li><strong>Total Entradas:</strong> <span class="text-highlight">{{ solicitudSeleccionada.totalEntradasUnidades }} unidades</span></li>
+            <li><strong>Total Fondos:</strong> <span class="text-highlight">{{ solicitudSeleccionada.totalFondosPorciones }} porciones</span></li>
+            <li><strong>Gramaje de Proteína:</strong> <span class="text-highlight">{{ solicitudSeleccionada.totalProteinaGramos / 1000 }} Kg total</span></li>
+            <li><strong>Total Postres:</strong> <span class="text-highlight">{{ solicitudSeleccionada.totalPostresPorciones }} porciones</span></li>
+            <li><strong>Porciones Líquidos:</strong> <span class="text-highlight">Tragos: {{ solicitudSeleccionada.totalPorcionesAlcohol }} | Jugos: {{ solicitudSeleccionada.totalPorcionesJugos }} | Bebidas: {{ solicitudSeleccionada.totalPorcionesGaseosas }}</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="logistica-section">
+        <h4>📋 Operaciones y Recursos Humanos Asignados:</h4>
+        <p *ngIf="solicitudSeleccionada.tipoEvento== 'Matrimonio'"><strong>Mesa novios : 1</strong></p>
+        <p><strong>Mesas requeridas (10 p/p):</strong> {{ solicitudSeleccionada.totalMesas }} | <strong>Mobiliario Cubiertos:</strong> {{ solicitudSeleccionada.totalCubiertos / 3}} tenedores / {{ solicitudSeleccionada.totalCubiertos / 3}} cucharas / {{ solicitudSeleccionada.totalCubiertos / 3}} cuchillos </p>
+        <p><strong>Personal Garzones (1 c/10):</strong> <span class="badge-staff">{{ solicitudSeleccionada.cantidadGarzones }} Garzones</span> | <strong>Personal Cocina (1 c/50):</strong> <span class="badge-staff">{{ solicitudSeleccionada.cantidadChefs }} Chefs</span></p>
+      </div>
+
+      <hr>
+
+      <div class="admin-actions">
+        <button 
+          class="btn-warning" 
+          *ngIf="solicitudSeleccionada.estado === 'PENDIENTE' || solicitudSeleccionada.estado === 'Pendiente'"
+          (click)="ponerEnEspera(solicitudSeleccionada.idCotizacion)">
+          ⏸️ Dejar en Espera (Consultar Implementos)
+        </button>
+        
+        <button 
+          class="btn-success" 
+          *ngIf="solicitudSeleccionada.estado === 'PENDIENTE' || solicitudSeleccionada.estado === 'Pendiente' || solicitudSeleccionada.estado === 'EN_ESPERA' || solicitudSeleccionada.estado === 'En Espera'"
+          (click)="aprobarMinuta(solicitudSeleccionada.idCotizacion)">
+          ✅ Aprobar Minuta (Confirmar Evento)
+        </button>
+        
+        <span class="msg-confirmado-status" *ngIf="solicitudSeleccionada.estado === 'CONFIRMADO'">
+          🎉 Esta minuta ya se encuentra aprobada y su orden de producción está en marcha.
+        </span>
+      </div>
+
+    </div>
+  </div>
+</div>

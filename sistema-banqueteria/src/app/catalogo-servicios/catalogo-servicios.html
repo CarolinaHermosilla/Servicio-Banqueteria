@@ -1,0 +1,30 @@
+<div class="catalogo-container">
+    <header class="catalogo-header">
+        <h1>Nuestras Experiencias Gastronómicas</h1>
+        <p>Más de 18 años de excelencia culinaria bajo el sello de alta cocina</p>
+    </header>
+
+    <div class="servicios-grid">
+        <div class="servicios-card" *ngFor="let exp of experiencias">
+            <div class="card-image-wrapper">
+                <img [src]="exp.imagenUrl" [alt]="exp.titulo" class="card-img">
+            </div>
+
+            <div class="card-content">
+                <h3>{{exp.titulo}}</h3>
+                <p class="descripcion">{{ exp.descripcion }}</p>
+
+                <ul class="features-list">
+                    <li *ngFor="let item of exp.caracteristicas">
+                        <span class="check-icon">✓</span> {{item}}
+                    </li>
+                </ul>
+
+                <button class="btn-cotizar-servicio" (click)="iniciarCotizacion(exp.titulo)">
+                    Cotizar esta experiencia
+                </button>
+
+            </div>
+        </div>
+    </div>
+</div>

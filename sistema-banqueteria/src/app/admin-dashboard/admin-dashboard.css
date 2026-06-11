@@ -1,0 +1,234 @@
+.dashboard-container{
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    height: 100hv;
+    background-color: #f1f3f5;
+    font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+/*side panel izquierdo*/
+.sidebar-panel{
+    background-color: white;
+    border-right: 1px solid #dee2e6;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    padding: 20px;
+    border-bottom: 1px solid #f1f3f5;
+}
+
+.panel-header h2{
+    font-size: 18px;
+    color: #2c3e50;
+    margin: 0 0 5px 0;
+}
+
+.panel-header p{
+    font-size: 12px;
+    color: #868e96;
+    margin: 0;
+}
+
+.table-wrapper{
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.admin-table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th{
+    text-align: left;
+    padding: 12px 20px;
+    background-color: #f8f9fa;
+    font-size: 11px;
+    text-transform: uppercase;
+    color: #495057;
+    letter-spacing: 0.5px;
+}
+
+.admin-table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #f1f3f5;
+    font-size: 13px;
+    cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.admin-table tbody tr:hover{
+    background-color: #f8f9fa;
+}
+
+.admin-table tr.active-row{
+    background-color: #fff4e6 !important;
+}
+
+.client-name{
+    font-weight: 600;
+    color: #343a40;
+}
+
+.badge-tag{
+   font-size: 10px;
+   background-color: #e3fafc;
+   color: #0c8599;
+   padding: 2px 6px;
+   border-radius: 4px;
+   font-weight: bold;
+   display: inline-block;
+   margin-top: 4px; 
+}
+
+/*side panel derecho*/
+.content-panel{
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.detail-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #dee2e6;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+.title-area h1{
+    margin: 5px 0;
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+.title-area p{
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.status-badge {
+    background-color: #ffe8cc;
+    color: #d9480f;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 4px 8px;
+    border-radius: 50px;
+    text-transform: uppercase;
+}
+
+.btn-approve{
+    background-color: #d9480f;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.btn-approve:hover{
+    background-color: #bc3e0b;
+}
+
+/*Grilla porciones*/
+.portions-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+}
+
+.category-card{
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    border: 1px solid #e9ecef;
+}
+
+.category-card h3{
+    margin-top: 0;
+    font-size: 16px;
+    color: #495057;
+    border-bottom: 2px solid #f1f3f5;
+    padding-bottom: 10px;
+}
+
+.highlight-card{
+    border-top: 4px solid #d9480f;
+}
+
+.item-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-list li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px dashed #e9ecef;
+    font-size: 13px;
+}
+
+.item-title{
+    color: #495057;
+}
+
+.item-value{
+    font-weight: 700;
+    color: #212529;
+}
+
+.weight-tag{
+    color: #d9480f;
+}
+
+/* =========================================
+   REGLAS PARA IMPRESIÓN Y EXPORTACIÓN A PDF
+   ========================================= */
+@media print {
+  /* 1. Ocultar todo lo que no sea la minuta */
+  h2, 
+  .subtitle, 
+  .table-responsive, 
+  .btn-cerrar, 
+  .btn-primary, 
+  .admin-actions {
+    display: none !important;
+  }
+
+  /* 2. Resetear el fondo de la página a blanco */
+  body, .admin-container {
+    background: white !important;
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 3. Expandir el panel de detalle para que use toda la hoja */
+  .detalle-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    background: white;
+    color: black;
+  }
+
+  /* 4. Forzar que los textos resaltados se impriman bien */
+  .text-highlight, .badge-staff {
+    border: 1px solid #ccc;
+    color: black !important;
+    background: transparent !important;
+  }
+}

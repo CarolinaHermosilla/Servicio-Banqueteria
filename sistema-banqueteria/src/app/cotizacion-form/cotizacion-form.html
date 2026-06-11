@@ -1,0 +1,139 @@
+<div class="form-container">
+  <div class="form-card">
+    <h2>Cotiza tu Evento</h2>
+    <p class="subtitle">Espacio Gastronómico - Alta Cocina a tu Medida</p>
+
+    <form [formGroup]="cotizacionForm" (ngSubmit)="enviarSolicitud()">
+      
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="tipoEvento">Tipo de Evento *</label>
+          <select id="tipoEvento" formControlName="tipoEvento">
+            <option value="">Selecciona una opción</option>
+            <option *ngFor="let evento of tiposDeEvento" [value]="evento">{{ evento }}</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="tipoMenu">Variante de Menú *</label>
+          <select id="tipoMenu" formControlName="tipoMenu">
+            <option value="">Selecciona el menú base</option>
+            <option *ngFor="let menu of tiposDeMenu" [value]="menu">{{ menu }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div class="form-group">
+          <label for="cantidadPersonas">Cantidad de Personas *</label>
+          <input type="number" id="cantidadPersonas" formControlName="cantidadPersonas" placeholder="Ej: 50">
+          <span class="error-msg" *ngIf="cotizacionForm.get('cantidadPersonas')?.touched && cotizacionForm.get('cantidadPersonas')?.invalid">
+            El mínimo requerido para el servicio es de 10 personas.
+          </span>
+        </div>
+
+        <div class="form-group">
+          <label for="fechaEvento">Fecha del Evento *</label>
+          <input type="date" id="fechaEvento" formControlName="fechaEvento">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="restriccionesAlimentarias">Restricciones Alimentarias (Opcional)</label>
+        <input type="text" id="restriccionesAlimentarias" formControlName="restriccionesAlimentarias" placeholder="Ej: Celíacos, Veganos...">
+      </div>
+
+      <div class="form-group">
+        <label for="cantRestricciones">Cantidad Personas con Restricciones (Opcional)</label>
+        <input type="number" id="cantRestricciones" formControlName="cantRestricciones" placeholder="Ej: 5">
+      </div>
+
+      <fieldset class="contact-section">
+        <legend>Configuración de su Menú Culinario e Hidratación</legend>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="seleccionCoctel">Cóctel de Bienvenida *</label>
+            <select id="seleccionCoctel" formControlName="seleccionCoctel">
+              <option value="">-- Elija el cóctel --</option>
+              <option *ngFor="let item of opcionesCoctel" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="seleccionEntrada">Platillo de Entrada *</label>
+            <select id="seleccionEntrada" formControlName="seleccionEntrada">
+              <option value="">-- Elija la entrada --</option>
+              <option *ngFor="let item of opcionesEntrada" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="seleccionFondo">Acompañamiento de Fondo *</label>
+            <select id="seleccionFondo" formControlName="seleccionFondo">
+              <option value="">-- Elija el acompañamiento --</option>
+              <option *ngFor="let item of opcionesFondo" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="seleccionProteina">Proteína Principal *</label>
+            <select id="seleccionProteina" formControlName="seleccionProteina">
+              <option value="">-- Elija la proteína --</option>
+              <option *ngFor="let item of opcionesProteina" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="seleccionPostre">Postre para el Cierre *</label>
+            <select id="seleccionPostre" formControlName="seleccionPostre">
+              <option value="">-- Elija el postre --</option>
+              <option *ngFor="let item of opcionesPostre" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="seleccionBebestibles">Selección de Bebestibles *</label>
+            <select id="seleccionBebestibles" formControlName="seleccionBebestibles">
+              <option value="">-- Elija las bebidas --</option>
+              <option *ngFor="let item of opcionesBebestibles" [value]="item">{{ item }}</option>
+            </select>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset formGroupName="datosContacto" class="contact-section">
+        <legend>Información de Contacto</legend>
+        
+        <div class="form-group">
+          <label for="nombre">Nombre Completo *</label>
+          <input type="text" id="nombre" formControlName="nombre" placeholder="Tu nombre">
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="email">Correo Electrónico *</label>
+            <input type="email" id="email" formControlName="email" placeholder="nombre@correo.com">
+            <span class="error-msg" *ngIf="cotizacionForm.get('datosContacto.email')?.touched && cotizacionForm.get('datosContacto.email')?.invalid">
+              Por favor, ingresa un correo electrónico válido.
+            </span>
+          </div>
+          
+          <div class="form-group">
+            <label for="telefono">Teléfono *</label>
+            <input type="text" id="telefono" formControlName="telefono" placeholder="+56912345678">
+          </div>
+        </div>
+      </fieldset>
+
+      <button type="submit" class="btn-submit" [disabled]="cotizacionForm.invalid">
+        Enviar Solicitud de Cotización
+      </button>
+
+    </form>
+  </div>
+</div>

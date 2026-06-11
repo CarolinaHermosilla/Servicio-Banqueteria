@@ -1,0 +1,125 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* Fondo gris claro suave */
+  font-family: 'Segoe UI', Roboto, sans-serif;
+}
+
+.form-card {
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 650px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05); /* Sombra elegante */
+}
+
+h2 {
+  margin: 0 0 5px 0;
+  color: #2c3e50;
+  font-size: 24px;
+}
+
+.subtitle {
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+
+/* Grilla para ordenar los campos en dos columnas */
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #34495e;
+  margin-bottom: 6px;
+}
+
+input, select {
+  padding: 10px 14px;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+  transition: all 0.2s ease;
+}
+
+/* El toque distintivo de enfoque para la Banquetería */
+input:focus, select:focus {
+  border-color: #d9480f; 
+  box-shadow: 0 0 0 3px rgba(217, 72, 15, 0.15);
+}
+
+.contact-section {
+  border: 1px solid #e9ecef;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 25px 0;
+  background-color: #fdfdfd;
+}
+
+.contact-section legend {
+  font-size: 14px;
+  font-weight: bold;
+  color: #d9480f;
+  padding: 0 8px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 14px;
+  background-color: #d9480f; /* Naranja gastronómico corporativo */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-submit:hover:not([disabled]) {
+  background-color: #bc3e0b;
+}
+
+/* Estado deshabilitado si faltan datos obligatorios */
+.btn-submit:disabled {
+  background-color: #dee2e6;
+  color: #adb5bd;
+  cursor: not-allowed;
+}
+
+/* --- ESTILOS DINÁMICOS DE ANGULAR --- */
+
+/* Si el campo fue tocado (ng-touched) y está vacío o incorrecto (ng-invalid) se tiñe de rojo */
+input.ng-touched.ng-invalid, 
+select.ng-touched.ng-invalid {
+  border-color: #e03131;
+  background-color: #fff5f5;
+}
+
+input.ng-touched.ng-invalid:focus, 
+select.ng-touched.ng-invalid:focus {
+  box-shadow: 0 0 0 3px rgba(224, 49, 49, 0.15);
+}
+
+/* Estilo para los textos de alerta de error */
+.error-msg {
+  color: #e03131;
+  font-size: 12px;
+  margin-top: 5px;
+  font-weight: 500;
+}
